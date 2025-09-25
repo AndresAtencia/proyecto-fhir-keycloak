@@ -1,4 +1,4 @@
-# 📌proyecto-fhir-keycloak
+# 📌proyecto-fhir
 
 Este proyecto implementa un servidor HAPI FHIR JPA Starter asegurado con Keycloak, desplegado en Docker.
 Incluye la configuración necesaria para exponer el API FHIR y validar la autenticación vía OAuth2.
@@ -55,3 +55,9 @@ curl -X POST http://localhost:8080/fhir/Patient \
 
 3.Consultar el paciente creado:
 curl http://localhost:8080/fhir/Patient/12345 -H "Accept: application/fhir+json"
+
+📂 Estructura del repositorio
+Proyecto_Parcial/
+├── hapi-fhir-jpaserver-starter/   # Proyecto base de HAPI FHIR
+├── application.yaml               # Configuración personalizada
+└── README.md                      # Este archivo
