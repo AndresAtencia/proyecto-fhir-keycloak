@@ -1,0 +1,11 @@
+hapi:
+  fhir:
+    server:
+      name: Local Tester
+      id: home
+    validation:
+      requests_enabled: true
+    security:
+      oauth2:
+        enabled: true
+        issuer-uri: http://localhost:8081/realms/fhir-realm
